@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1513569771920-c9e1d31714af?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;  
+  font-family: "Poppins", sans-serif; 
+  
+}
+
+h1 {
+  color: #000000; 
+  font-size: 30px; 
+  text-align: center; 
+  margin-top: 40px; 
+  font-family: "Poppins", sans-serif; 
+  font-weight: 700; 
+}
+
+p {
+  color: #000000; 
+  font-size: 18px; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-family: "Poppins", sans-serif; 
+  margin-top: 30px;
+}
+
+/* style.css */
+.gambar-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.gambar-row {
+  display: flex;
+  justify-content: center;
+}
+
+.gambar-container img {
+  opacity: 0.8;
+  border-radius: 30px;
+  border: 2px solid #ffffff; 
+  margin: 20px; 
+  transition: transform 0.3s ease; 
+}
+
+.gambar-item {
+  text-align: center;
+}
+
+.gambar-item p {
+  margin-top: -20px;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease; 
+  color: #000000;
+}
+
+.gambar-item:hover p {
+  color: #ff0404; 
+}
+
+.gambar-item {
+  margin: 0 30px; 
+}
+
+.gambar-item:hover img {
+  transform: scale(0.95); 
+}
+
+
+#tanggal-waktu {
+  font-size: 18px; 
+  color: #ff0404; 
+  margin-top: -20px; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: rgba(125, 18, 18, 0.808);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.popup.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.popup p {
+  color: #030303;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  cursor: pointer;
+  color: #0e0e0e;
+  font-size: 40px;
+  transition: color 0.3s ease;
+  align-self: flex-end;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+
+.tombol-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+#tombol {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+#tombol:hover {
+  background-color: #45a049;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c6c6c6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #aa0e0e;
+}
+
+#menu-takjil {
+  cursor: pointer;
+}
