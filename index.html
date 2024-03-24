@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="h1_pertama">
+      <h1 id="menu-takjil">Menu Takjil Hari Ini</h1>
+      <p id="tanggal-waktu"></p>
+      <p>
+        Nikmati hidangan takjil yang lezat dan menyegarkan untuk berbuka puasa
+        Anda hari ini!
+      </p>
+    </div>
+
+    <div class="gambar-container">
+      <div class="gambar-row">
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/0e/f5/76/0ef5768ec8d14151d09cc83258ca6376.jpg"
+            alt="Gambar 1"
+            width="270"
+            height="250"
+          />
+          <p>Es Cincau</p>
+        </div>
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/ec/c2/4b/ecc24b712202320f2f5797db126ecc1f.jpg"
+            alt="Gambar 5"
+            width="270"
+            height="250"
+          />
+          <p>Risol Mayo</p>
+        </div>
+      </div>
+      <div class="gambar-row">
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/50/4f/8d/504f8d3bcb2e992e50f247f357070baf.jpg"
+            alt="Gambar 2"
+            width="270"
+            height="250"
+          />
+          <p>Bubur Ketan Hitam</p>
+        </div>
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/87/ef/aa/87efaa784ea63e8fe0ec6e93efc6402f.jpg"
+            alt="Gambar 4"
+            width="270"
+            height="250"
+          />
+          <p>Gorengan</p>
+        </div>
+      </div>
+      <div class="gambar-row">
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/c2/96/bc/c296bc209144760d8d4f46b9fb333410.jpg"
+            alt="Gambar 3"
+            width="270"
+            height="250"
+          />
+          <p>Cocktail</p>
+        </div>
+        <div class="gambar-item">
+          <img
+            src="https://i.pinimg.com/564x/ed/d1/90/edd190c0901b329099a185717884e132.jpg"
+            alt="Gambar 6"
+            width="270"
+            height="250"
+          />
+          <p>Bakwan</p>
+        </div>
+      </div>
+    </div>
+
+    <audio id="myAudio" autoplay loop>
+      <source src="assets/Opick - Ramadhan Tiba.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="tombol-container">
+      <button id="tombol">Pesan Disini!</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const waktu = document.getElementById("tanggal-waktu");
+
+      function updateWaktu() {
+        const sekarang = new Date();
+        const tanggal = sekarang.toLocaleDateString("id-ID", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+        const jam = sekarang.toLocaleTimeString("id-ID");
+        waktu.innerText = `Tanggal: ${tanggal} | Waktu: ${jam}`;
+      }
+
+      setInterval(updateWaktu, 1000);
+
+      updateWaktu();
+
+    </script>
+  </body>
+</html>
